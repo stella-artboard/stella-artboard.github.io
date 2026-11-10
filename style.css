@@ -119,6 +119,20 @@ h2::before { content: "\2726  "; color: var(--gold); font-size: .7em; vertical-a
 .panel p, .panel ul { margin: 0; color: var(--mist); }
 .panel ul { padding-left: 18px; }
 
+/* friends */
+.friends { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.profile { padding: 26px 26px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(180deg, rgba(42,47,110,.55), rgba(30,34,82,.85)); }
+.profile .who { display: flex; align-items: center; gap: 16px; margin-bottom: 18px; }
+.profile .who img { flex: none; width: 84px; height: 84px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 1px var(--line), 0 14px 36px -14px rgba(242,196,109,.45); }
+.profile h3 { margin: 0; font: 400 26px/1.2 var(--serif); color: var(--gold); }
+.profile .role { margin: 3px 0 0; color: var(--cream); font-size: 13.5px; opacity: .85; }
+.profile p { margin: 0 0 12px; color: var(--mist); }
+.profile dl { display: grid; grid-template-columns: auto 1fr; gap: 7px 16px; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14.5px; }
+.profile dt { color: var(--gold); }
+.profile dd { margin: 0; color: var(--cream); }
+.sky { margin-top: 22px; }
+.sky h3 { margin-bottom: 8px; }
+
 /* policy page */
 .doc { max-width: 760px; padding: 72px 0 40px; }
 .doc .card-note { margin: 26px 0 34px; padding: 18px 22px; border-left: 3px solid var(--gold); border-radius: 0 12px 12px 0; background: rgba(255,246,224,.07); }
@@ -141,7 +155,8 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 10px 24px; justify-content: 
 @media (max-width: 760px) {
   .hero { grid-template-columns: 1fr; padding: 56px 0 48px; gap: 32px; }
   .face { order: -1; width: 200px; }
-  .two, .facts { grid-template-columns: 1fr; }
+  .two, .facts, .friends { grid-template-columns: 1fr; }
+  .profile { padding: 22px 20px 20px; }
   .nav { gap: 16px; }
   .brand span { display: none; }
 }
