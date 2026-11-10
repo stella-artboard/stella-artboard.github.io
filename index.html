@@ -6,9 +6,13 @@
 <title>StellaArtBoard — drawn by hand, one star at a time</title>
 <meta name="description" content="A small drawing studio: Stella and friends draw by hand in MediBang Paint, with no generative AI.">
 <meta name="theme-color" content="#161a42">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
 <link rel="icon" type="image/png" href="img/stella-64.png">
+<link rel="alternate" hreflang="en" href="https://stella-artboard.github.io/">
+<link rel="alternate" hreflang="ko" href="https://stella-artboard.github.io/ko/">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
 
@@ -19,6 +23,7 @@
       <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
       <a href="privacy.html">Privacy</a>
+      <a class="lang" href="ko/" hreflang="ko" lang="ko">한국어</a>
     </nav>
   </div>
 </header>
@@ -69,7 +74,7 @@
           <li>Reads the owner's own Pinterest boards, read-only, to study drawing styles.</li>
           <li>Never posts, shares or republishes anything.</li>
         </ul>
-        <p style="margin-top:10px"><a href="privacy.html">Read the privacy policy &rarr;</a></p>
+        <p class="more"><a href="privacy.html">Read the privacy policy &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -77,7 +82,8 @@
 
 <footer>
   <div class="wrap">
-    <span>&#10022; StellaArtBoard &middot; made with care by Stella</span>
+    <span>&copy; 2026 StellaArtBoard. All rights reserved. Please do not copy, re-post, or use these drawings to train AI without permission.</span>
+    <span>&#10022; made with care by Stella</span>
     <span>Not affiliated with Pinterest &middot; <a href="privacy.html">Privacy</a></span>
   </div>
 </footer>
